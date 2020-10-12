@@ -1,0 +1,115 @@
+.rsum-per{
+    padding: 5px;
+}
+/*res-bgcolor*/
+.res-bgcolor{
+    height: 100vh;
+}
+/*res-menu*/
+.res-menu ul{
+    margin: 10px;
+    padding: 0px;
+}
+.res-menu{
+    margin: unset;
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    transform: translate(-100%, 0%);
+}
+.margin,.social-icons a{
+    margin: 5px;
+}
+/*resume page -personal layout*/
+.rsum-per{
+    width: 50%;
+}
+.rsum-cont{
+    flex-direction: unset;
+}
+/*res-about*/
+.res-about{
+    position: relative;
+}
+.icon .fas{
+    font-size: 32px;
+}
+.padding h3{
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+.res-layout{
+    flex: 0 0 50%;
+}
+.res-layout ul,.padding h4{
+    margin: 0px;
+}
+.h4{
+    font-size: 1rem;
+}
+/*coding skills*/
+.progress{
+    background-color: rgb(236, 236, 244);
+    border-radius: 20px;
+    width: 50%;
+    margin: 10px;
+}
+.skill-per p{
+    margin: 0px;
+}
+.skill-per{
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to bottom, #256af3 0%, #3488f4 100%);
+    border-radius: 20px;
+    color: #ffffff; 
+}
+.per-html{
+    width: 90%;
+    animation: skill-bar 4s;
+}
+@keyframes skill-bar{
+    from{width: 0%;}
+    to{width: 90%;}
+}
+.per-css{
+    width: 80%;
+    animation: skill-css 4s ;
+}
+@keyframes skill-css{
+    from{width: 0%;}
+    to{width: 80%;}
+}
+.per-js{
+    width: 75%;
+    animation: skill-js 4s;
+}
+@keyframes skill-js{
+    from{width: 0%;}
+    to{width: 75%;}
+}
+@media all and (max-width: 576px){
+    .rsum-cont,.project-list{
+        flex-direction: column;
+    }
+    .rsum-per,.progress{
+        width: unset;
+    }
+    .res-bgcolor{
+        height: unset;
+    }
+    .res-layout{
+        flex: 0 0 100%;
+    }
+}
+@media (min-width:576px) and (max-width:1200px){
+    .rsum-cont{
+        flex-direction: column;
+    }
+    .rsum-per{
+        width: unset;
+    }
+    .res-bgcolor{
+        height: 100vh;
+    }  
+}

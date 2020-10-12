@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+}
+.project-list{
+    display: flex;
+}
+.list{
+    margin: 0px 15px 0px 15px;
+    text-align: center;
+    flex-basis: 30%;
+}
+.list img{
+    width: 250px;
+    height: 150px;
+    border-radius: 10px;
+}
